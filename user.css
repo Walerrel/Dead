@@ -1,0 +1,128 @@
+body {
+    background: #041a31;
+    color: aliceblue;
+    font-family: "PT Sans", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.maybe {
+    margin-bottom: 20px;
+}
+
+.form-element-login,
+.form-element-password {
+    margin: 10px 0;
+    width: 200px; 
+    position: relative;
+}
+
+.form-element-login input,
+.form-element-password input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family: "PT Sans", serif;}
+    
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.btn-join {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0066cc;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.btn-join:hover {
+    background-color: #005bb5;
+}
+
+
+.btn-join[data-tooltip] {
+    position: relative;
+}
+
+.btn-join[data-tooltip]:before,
+.btn-join[data-tooltip]:after {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: all 0.2s;
+}
+
+.btn-join[data-tooltip]:before {
+    content: attr(data-tooltip);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.btn-join[data-tooltip]:after {
+    content: '';
+    border: 5px solid transparent;
+    border-top-color: #000;
+    z-index: 9;
+}
+
+.btn-join[data-tooltip]:hover:before,
+.btn-join[data-tooltip]:hover:after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn-join[data-tooltip]:hover:before {
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-join[data-tooltip]:hover:after {
+    bottom: 115%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.back-button {
+    margin-top: 10px; 
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+.user-img {
+    max-width: 256px;
+    max-height: 256px;
+    height: auto;
+    width: auto;
+}
+*{font-family: "PT Sans", serif;}

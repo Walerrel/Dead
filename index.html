@@ -1,0 +1,153 @@
+
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Klodovka</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+            <div class="dropdown">
+                <a МАГАЗИНЫ></a>
+                <button onclick="ToggleMenu('dropdown')">МАГАЗИНЫ</button>
+<div class="dropdown-content" id="dropdown">
+<a href="https://store.steampowered.com/" target="_blank">Steam</a>
+<a href="https://www.gog.com/en/" target="_blank">GOG</a>
+<a href="https://store.epicgames.com/" target="_blank">EpicGames</a>
+<a href="https://ggsel.net/" target="_blank">GGSEL</a>
+<a href="https://plati.market/" target="_blank">Plati.Market</a>
+</div>
+               
+<script>
+    function ToggleMenu() {
+        var dropdown = document.getElementById("dropdown");
+        if (dropdown.style.display === "block") {
+            dropdown.style.display = "none";
+        } else {
+            dropdown.style.display = "block";
+        }
+    }
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown button')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.style.display === "block") {
+                    openDropdown.style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+        
+                
+                <a href="community.html">СООБЩЕСТВО</a>
+                <a href="error tech.html">ТЕХ.ПОДДЕРЖКА</a>
+            </div>
+            <div>
+                <a href="error.html">Список желаемого </a>
+                <input type="text" placeholder="ПОИСК">
+                <a href="user.html">Войти</a>
+                <a href="sing up.html">Регистрация</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>БЫСТРЫЙ ЗАПУСК</h3>
+                <ul>
+                    <li><a href="error.html">Ghostrunner</a></li>
+                    <li><a href="error.html">Severed Steel</a></li>
+                    <li><a href="error.html">Sifu</a></li>
+                    <li><a href="error.html">KILL KNIGHT</a></li>
+                    <li><a href="error.html">TerraTech</a></li>
+                </ul>
+                <h3>ПОДАРОЧНЫЕ КАРТЫ</h3>
+                <ul>
+                    <li><a href="error.html">Игра – лучший подарок</a></li>
+                </ul>
+                <h3>НЕДАВНО ПРОСМОТРЕННЫЕ</h3>
+                <ul>
+                    <li><a href="error.html">DiRT Rally 2.0</a></li>
+                    <li><a href="#">Awaria</a></li>
+                </ul>
+                <h3>ВАШИ МЕТКИ</h3>
+                <ul>
+                    <li><a href="error.html">Лут</a></li>
+                    <li><a href="error.html">Зомби</a></li>
+                    <li><a href="error.html">Выживание</a></li>
+                    <li><a href="error.html">Шутер от первого лица</a></li>
+                    <li><a href="error.html">Строительство базы</a></li>
+                </ul>
+                <h3>РЕКОМЕНДУЕТСЯ</h3>
+                <ul>
+                    <li><a href="error.html">Друзьям</a></li>
+                    <li><a href="error.html">Кураторами of Klodovka</a></li>
+                    <li><a href="error.html">По меткам</a></li>
+                </ul>
+                <h3>КАТЕГОРИИ</h3>
+                <ul>
+                    <li><a href="error.html">Лидеры продаж</a></li>
+                    <li><a href="error.html">Новинки</a></li>
+                    <li><a href="error.html">Скоро выйдут</a></li>
+                    <li><a href="error.html">Скидки</a></li>
+                    <li><a href="error.html">Продукты для VR</a></li>
+                    <li><a href="error.html">С поддержкой контроллеров</a></li>
+                </ul>
+                <h3>ПОИСК ПО ЖАНРУ</h3>
+                <ul>
+                    <li><a href="error.html">Бесплатные</a></li>
+                    <li><a href="error.html">Ранний доступ</a></li>
+                    <li><a href="error.html">Гонки</a></li>
+                    <li><a href="error.html">Инди</a></li>
+                    <li><a href="error.html">Казуальная игра</a></li>
+                    <li><a href="error.html">MMO</a></li>
+                    <li><a href="error.html">Приключение</a></li>
+                    <li><a href="error.html">Ролевая игра</a></li>
+                    <li><a href="error.html">Симулятор</a></li>
+                    <li><a href="error.html">Спорт</a></li>
+                    <li><a href="error.html">Стратегия</a></li>
+                    <li><a href="error.html">Экшен</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="banner">
+                    <h2>Скидки в Steam</h2>
+                    <p>скидки с 24 февраля по 3 марта</p>
+                    <a href="https://store.steampowered.com/" target="_blank">
+                    <button>Купить со скидкой </button>
+                </a>
+                </div>
+                <div class="featured-items">
+                    <h3>Рекомендуемые</h3>
+                </div>
+                <div class="game-section">
+                    <img src="img\рекомендуемое 1.png" alt="Indiana Jones and the Great Circle">
+                    <h2>Indiana Jones and the Great Circle</h2>
+                    <p>Печальный релиз с большой надеждой?</p>
+                </div>
+                <div class="game-section">
+                    <img src="img\рекомендуемое 2.webp" alt="Enshrouded">
+                    <h2>Assassin’s Creed Shadows</h2>
+                    <p >Последняя надежда Ubisoft? </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://t.me" target="_blank">Telegram</a></li>
+                <li><a href="https://www.reddit.com" target="_blank">Reddit</a></li>
+                <li><a href="https://www.patreon.com" target="_blank">Patreon</a></li>
+                <li><a href="https://boosty.to" target="_blank">Boosty</a></li>
+            </ul>
+            <p>&copy; 2025 Klodovka. Все права защищены.</p>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #316eac;
+}
+
+.navbar {
+    background-color: #3c5e81;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-menu, .right-menu {
+    display: flex;
+}
+
+.navbar a, .navbar button {
+    color: #f3f3f3;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar a:hover, .navbar button:hover {
+    background-color: #546c83;
+    color: black;
+}
+
+.navbar input[type="text"] {
+    padding: 5px 10px;
+    margin-top: 8px;
+    margin-right: 14px;
+    border: none;
+    font-size: 14px;
+    background-color: #2b445e; 
+    color: #c6d4df; 
+    width: 190px; 
+    height: 25px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c5e81;
+    color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #f3f3f3;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #4a90e2;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "PT Sans", serif;
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.column {
+    background-color: #e6e6e6;
+    border: 1px solid #00000000;
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    font-size: 12px;
+  
+}
+
+.content img {
+    width: 100%; 
+    max-height: 230px;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+    min-width: 40ch;
+}
+.ioi{
+    color: #c6d4df;
+}

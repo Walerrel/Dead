@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="user-img" src="img/user.png" alt="User Logo">
+            <h2 class="maybe">Введите данные, чтобы войти</h2>
+            <div class="form-element-login">
+                <label for="text">Логин</label>
+                <input type="text" name="login" id="text" placeholder="Ваш Логин">
+            </div>
+            <div class="form-element-password">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password" placeholder="Введите пароль">
+            </div>
+            <button class="btn-join" id="show-login" data-tooltip="Нажмите для входа">Войти</button>
+            <button class="back-button" onclick="history.back()">Назад</button>
+        </div>
+    </header>
+    <script>
+        document.getElementById('show-login').addEventListener('click', function() {
+            const login = document.getElementById('text').value;
+            const password = document.getElementById('password').value;
+            
+            if (login && password) {
+                fetch('check_login.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ login: login, password: password })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Login successful!');
+                    } else {
+                        alert('Invalid login or password.');
+                    }
+                });
+            } else {
+                alert('Please enter both login and password.');
+            }
+        });
+    </script>
+</body>
+</html>
